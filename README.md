@@ -65,3 +65,14 @@ Movements with the A, S, D, and W keys were achieved through the turtle1/cmd vel
 
       
 Both, teleport and rel_teleport functions uses services, while pubVel is a publisher to the cmd_vel topic. 
+
+
+Finally, the script that was just created was included in the catkin install python section of the file
+CMakeLists.txt, following the same structure as the other scripts already included.
+Launched a terminal, went to the catkin workspace directory and typed the catkin make command to build the modified package.
+• With Linux operating, 3 terminals were launched. In the first terminal, the roscore command was typed to start the master node.
+• In the second terminal, type rosrun turtlesim turtlesim node.
+• In the third terminal go to the directory containing the catkin workspace and type source devel/setup.bash. Then rosrun hello turtle myTeleopKey.py was   written. In this point, the terminal is waiting for key input.
+
+![Captura de pantalla de 2022-04-07 22-35-22](https://user-images.githubusercontent.com/64180738/162360548-dc28b562-59a4-47d8-aca5-d7338d16e89f.png)
+
