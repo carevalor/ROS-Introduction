@@ -9,9 +9,9 @@ Open the hello_turtle folder in VC and open the file called yTeleopKey.py
 Open a terminal in VC and type the following commands to start the simulation
 
 
-`$ source devel/setup.bash
-  $roslaunch hello_turtle turtle.launch
-`
+                    source devel/setup.bash
+          
+                    roslaunch hello_turtle turtle.launch
 
 
 First launch three linux terminals. At the first terminal run the following commnand to start ROS.
