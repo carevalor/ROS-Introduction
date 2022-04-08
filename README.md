@@ -33,4 +33,32 @@ For this, the necessary libraries were first imported
      from turtlesim.srv import TeleportAbsolute 
      import argparse
      from numpy import pi
+     
+     
+To detect if a key was pressed, a function called "getkey" was added. Which was taken from the code available at this link: http://python4fun.blogspot.com/2008/06/get-key-press-in-python.html.
+
+
+If a key is pressed, it must detect which key was pressed. For this, the function called "check" was created.
+     
+   def check(key): 
+    if (key==b'w'):
+        pubVel(1,0,1)
+    if (key==b's'):
+        pubVel(-1,0,1)
+    if (key==b'a'):
+        pubVel(0,1,1)
+    if (key==b'd'):
+        pubVel(0,-1,1)
+    if (key==b' '):
+        rel_tp(0, pi)
+    if (key==b'r'):
+        teleport(5, 5, 0)
+    if (key==b'q'):
+        exit()
+
+Movements with the A, S, D, and W keys were achieved through the turtle1/cmd vel topic, while movements with the R and SPACE keys were achieved through the services turtle1/teleport absolute and turtle1/teleport relative.
+        
+        
+        
+      
 
