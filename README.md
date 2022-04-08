@@ -64,4 +64,4 @@ Movements with the A, S, D, and W keys were achieved through the turtle1/cmd vel
 ![Captura de pantalla de 2022-04-07 21-34-15](https://user-images.githubusercontent.com/64180738/162356140-5f4c0633-ea08-4384-a55b-707f6fe47043.png)
 
       
-Note that both, teleport and rel_teleport functions uses services, while pubVel is a publisher to the cmd_vel topic. 
+Both, teleport and rel_teleport functions uses services, while pubVel is a publisher to the cmd_vel topic. 
